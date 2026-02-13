@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #0f0c29;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent pull-to-refresh on mobile */
+body {
+  overscroll-behavior-y: contain;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus, select:focus {
+  border-color: #f0c27a !important;
+  box-shadow: 0 0 0 2px rgba(240, 194, 122, 0.15);
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
